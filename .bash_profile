@@ -11,7 +11,7 @@ export "$COURSE_ID"
 FILE="/home/$USER/.token"
 
 if [ -f "$FILE" ]; then
-  echo "$FILE **does*** exist in your system"
+  #echo "$FILE **does*** exist in your system"
 
   if [ $(stat -c "%a" "$FILE") -ne 600 ]; then
     echo "Warning: .token file has too open permissions"
