@@ -4,8 +4,7 @@
 echo "Hello $(whoami)"
 
 #creates env variable and export it
-COURSE_ID='DevOpsTheHardWay'
-export "$COURSE_ID"
+export COURSE_ID="__REPO_NAME__"
 
 #Check if .token exist, and if it has the right permissions
 FILE="/home/$USER/.token"
